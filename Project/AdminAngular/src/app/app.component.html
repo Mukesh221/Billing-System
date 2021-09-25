@@ -1,0 +1,10 @@
+<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+  <input type = "text" name = "adminName" placeholder = "adminName" ngModel>
+  <br/>
+  <input type = "text" name = "passwd" placeholder = "passwd" ngModel>
+  <br/>
+  <input type = "submit" value = "Login">
+</form>
+<br><br>
+<app-user [check]="check"> </app-user>
+<router-outlet></router-outlet>

@@ -1,0 +1,100 @@
+{
+  "user": [
+    {
+      "userId": 1,
+      "userName": "FirstUser",
+      "userPassword": "qwerty"
+    },
+    {
+      "userId": 2,
+      "userName": "SecondUser",
+      "userPassword": "123456"
+    }
+  ],
+  "menu": [
+    {
+      "menuId": 1,
+      "itemName": "item1",
+      "itemCost": 40
+    },
+    {
+      "menuId": 2,
+      "itemName": "item2",
+      "itemCost": 50
+    },
+    {
+      "menuId": 3,
+      "itemName": "item3",
+      "itemCost": 60
+    },
+    {
+      "menuId": 4,
+      "itemName": "item4",
+      "itemCost": 20
+    },
+    {
+      "menuId": 5,
+      "itemName": "item5",
+      "itemCost": 30
+    },
+    {
+      "menuId": 6,
+      "itemName": "item6",
+      "itemCost": 70
+    },
+    {
+      "menuId": 7,
+      "itemName": "item7",
+      "itemCost": 30
+    },
+    {
+      "menuId": 8,
+      "itemName": "item8",
+      "itemCost": 60
+    }
+  ],
+  "admin": [
+    {
+      "adminId": 1,
+      "adminName": "FirstAdmin",
+      "adminPassword": "qwerty"
+    },
+    {
+      "adminId": 2,
+      "adminName": "SecondAdmin",
+      "adminPassword": "123456"
+    }
+  ],
+  "bill": [
+    {
+      "id": 1,
+      "billDate": "2021-08-22",
+      "totalAmount": 180
+    },
+    {
+      "billDate": "2021-08-27",
+      "totalAmount": 100,
+      "id": 2
+    },
+    {
+      "billDate": "2021-08-27",
+      "totalAmount": 160,
+      "id": 3
+    },
+    {
+      "billDate": "2021-08-27",
+      "totalAmount": 210,
+      "id": 4
+    },
+    {
+      "billDate": "2021-08-27",
+      "totalAmount": 160,
+      "id": 5
+    },
+    {
+      "billDate": "2021-08-27",
+      "totalAmount": 370,
+      "id": 6
+    }
+  ]
+}

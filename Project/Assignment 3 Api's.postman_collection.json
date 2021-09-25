@@ -1,0 +1,245 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Assignment 3 Api's",
+		"_postman_id": "872c7655-69da-abcb-c9a6-09e7ae5c329f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Api's",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8096/menu",
+					"request": {
+						"url": "localhost:8096/menu",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\n        \"userId\": 1,\n        \"userName\": \"FirstUser\",\n        \"userPassword\": \"qwerty\"\n    }"
+						},
+						"description": "for fetching menu from database"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/selectmenu",
+					"request": {
+						"url": "localhost:8096/selectmenu",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[1,2,7,8]"
+						},
+						"description": "For selecting menu "
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/logoutuser",
+					"request": {
+						"url": "localhost:8096/logoutuser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "to logout of user"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/register",
+					"request": {
+						"url": "localhost:8096/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\n        \"userId\": 5,\n        \"userName\": \"FifthUser\",\n        \"userPassword\": \"qwertylll\"\n    }"
+						},
+						"description": "For registration of user"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/loginuser",
+					"request": {
+						"url": "localhost:8096/loginuser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"userId\": 1,\n        \"userName\": \"FirstUser\",\n        \"userPassword\": \"qwerty\"\n    }"
+						},
+						"description": "For login of user"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Api's",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8096/admin",
+					"request": {
+						"url": "localhost:8096/admin",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "to logout for admin"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/today",
+					"request": {
+						"url": "localhost:8096/today",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\n        \"adminId\": 1,\n        \"adminName\": \"FirstAdmin\",\n        \"adminPassword\": \"qwerty\"\n    }"
+						},
+						"description": "For seeing the bills which are genrated today"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/month",
+					"request": {
+						"url": "localhost:8096/month",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\n        \"adminId\": 1,\n        \"adminName\": \"FirstAdmin\",\n        \"adminPassword\": \"qwerty\"\n    }"
+						},
+						"description": "to see the total sale from this month"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/users",
+					"request": {
+						"url": "localhost:8096/users",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "To read all users from database(CURD Operation)"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/users/5",
+					"request": {
+						"url": "localhost:8096/users/5",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Mention the userId of user which you want to delete.\n(CRUD Operation)"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/users",
+					"request": {
+						"url": "localhost:8096/users",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"userId\": 5,\n        \"userName\": \"SixthUser\",\n        \"userPassword\": \"qwertyuio\"\n    }"
+						},
+						"description": "To update the user information(CURD Opeartion)"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8096/admin",
+					"request": {
+						"url": "localhost:8096/admin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"adminId\": 1,\n        \"adminName\": \"FirstAdmin\",\n        \"adminPassword\": \"qwerty\"\n    }"
+						},
+						"description": "For login of Admin"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

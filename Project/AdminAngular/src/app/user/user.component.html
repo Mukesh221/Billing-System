@@ -1,0 +1,24 @@
+
+<br><br>
+<div *ngIf="check">
+<table  border="1">
+    <h2>Sale of this month is {{t}}</h2>
+    <br><br><br>
+    <h2>These are the bills which are generated today</h2>
+    <tr>
+        <td>Bill Number</td>
+        <td>Date</td>
+        <td>Amount</td>
+    </tr>
+    <tr *ngFor="let item of temp1">
+        <td>{{item.id}}</td>
+        <td>{{item.billDate}}</td>
+        <td>{{item.totalAmount}}</td>
+    </tr>
+</table>
+
+<button (click)="getName()">Logout</button>
+</div>
+
+
+ 
