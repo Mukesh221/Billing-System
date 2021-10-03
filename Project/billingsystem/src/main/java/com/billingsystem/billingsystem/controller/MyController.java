@@ -69,10 +69,8 @@ public class MyController{
     //Getting bills which are generated this month
     @GetMapping("/month")
     public List<Bill> getBillMonth(){
-    	 
     		return this.billService.getBillMonth();
-    	 
-    }
+   }
     
 //-------------------------menu--------------------------------//
     
@@ -98,9 +96,6 @@ public class MyController{
 //					return 0;
 //				}
 //			}
-			
-			 
-		 
 	}
 	
 	 
@@ -136,8 +131,6 @@ public class MyController{
 			System.out.println("\n"+"You need to login first."+"\n");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
-		
-		
 	}
 	
 	//registration/creation of user
@@ -150,7 +143,6 @@ public class MyController{
 			 userService.registerUser(user);
 			 return new ResponseEntity<>(HttpStatus.OK);
 		}
-		
 	}
 	
 	 
@@ -164,12 +156,7 @@ public class MyController{
 	//Update of CRUD
 	@PutMapping("/users")
 	public User updateUser(@RequestBody User user) {
-		 
-			return this.userService.updateUser(user);
-		 
-			
-		
-		
+		 return this.userService.updateUser(user);
 	}
 	
 	//Delete of CRUD
@@ -186,8 +173,6 @@ public class MyController{
 			System.out.println("Please login first");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
-		
-		
 	}
 
 	
